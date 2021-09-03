@@ -34,7 +34,7 @@
             position: absolute;
             top: 22px;
             right: 20px;
-            font-size: 1rem;
+            font-size: 2rem;
         }
     }
 
@@ -46,6 +46,35 @@
 
         @include tablet {
             display: none;
+        }
+
+        &-links {
+            color: $dark;
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+            
+            &:hover {
+                color: $lime;
+                transition: all 0.3s ease;
+            }
+        }
+
+        #button {
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: $lime;
+            margin-left: 16px;
+            color: $light;
+
+            &:hover {
+                background: $orangeRed;
+                transition: all 0.3s ease;
+            }
+
         }
     }
 
